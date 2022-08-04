@@ -17,11 +17,15 @@ def addItem (list):
     newItemUnits = input("how many units being added: ")
     list.append ( inventoryClass.item(NewItemName, NewItemExp, NewItemType,NewItemPrice, NewItemCost, newItemUnits) )
     
-
+#FIX ME need to understand how to delete an object based on its attribute, while looping through the list
 def removeItem(list):
-    deleteItem = input("Enter the name of the item you want to remove")
-    for index, x in enumerate(list):
-        list.remove(deleteItem)
+    deleteItem = input("Enter the name of the item you want to remove: ")
+    for obj in list:
+        if getattr(obj,"name") == deleteItem:
+            del obj
+
+    
+
    
 
 print("******************** Welcome to your Inventory Control System ********************")
@@ -40,5 +44,7 @@ for obj in newList:
 
 removeItem(newList)
 
+for obj in newList:
+    print(obj)
 
 
