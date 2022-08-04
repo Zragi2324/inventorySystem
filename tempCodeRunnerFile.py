@@ -30,7 +30,6 @@ def addItem (list = []):
 
 newList = []
 addItem(newList)
-addItem(newList)
 for obj in newList:
     print(obj)
 
