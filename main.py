@@ -3,7 +3,7 @@
 # Date Created: 8-03-2022 
 # Purpose: First python project, program will act as an inventory system for a small convience store
 
-from os import remove
+
 import inventoryClass
 
 list = []
@@ -14,10 +14,10 @@ def addItem (list):
     NewItemType = input("Enter type of Item (Grocey, tobaco, or taxable): ")
     NewItemPrice = input("Enter the selling price: ")
     NewItemCost = input("Cost of the product: ")
-    newItemUnits = input("how many units being added: \n")
+    newItemUnits = input("how many units being added: ")
     list.append ( inventoryClass.item(NewItemName, NewItemExp, NewItemType,NewItemPrice, NewItemCost, newItemUnits) )
     
-#FIX ME need to understand how to delete an object based on its attribute, while looping through the list
+
 def removeItem(list):
 
     if len(list) == 0:
