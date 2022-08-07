@@ -1,0 +1,14 @@
+
+Name: cat
+Experation Date: 2009
+Type of Item: grocery
+Sale price: 20
+Cost of each unit: 10
+Number of units in storage: 1
+
+Name: dog
+Experation Date: 2019
+Type of Item: tobaco
+Sale price: 25
+Cost of each unit: 1
+Number of units in storage: 4
