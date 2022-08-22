@@ -1,3 +1,6 @@
+from barcode import UPCA
+from barcode.writer import ImageWriter
+
 class item:
     def __init__(self,name,expDate,itemType,sellingPrice,cost, numUnits):
         self.name = name
@@ -13,4 +16,9 @@ class item:
     def __str__(self):
         return "\nName: " + f"{self.name}" + "\nExperation Date: " + f"{self.expDate}" + "\nType of Item: " + self.itemType +"\nSale price: " + f"{self.sellingPrice}" "\nCost of each unit: " + f"{self.cost}" "\nNumber of units in storage: " + f"{self.Units}"
 
-   
+
+number = "123456789123"
+print(type(number))
+newItem = UPCA(number, writer=ImageWriter())
+newItem.save("name")
+
